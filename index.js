@@ -34,7 +34,7 @@ app.get('/api/convert/', (req, res) => {
 // Environment Variables
 // const port = 80 || 8080;  // listen on port 80 or 8080
 
-const port = 3000;  // listen on port 80 or 8080
+const port = 80;  // listen on port 80 or 8080
 
 // listen on the port
 app.listen(port, () => console.log(`Listening on port ${port}...`));
