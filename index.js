@@ -1,8 +1,15 @@
 const express = require('express');
 const app = express();
+const app2 = express();
+
 app.use(express.json());
+app2.use(express.json());
 
 app.get('/', (req, res) => {    
+    res.send("<h1>Pounds to Kilogram API Converter</h1>");
+});
+
+app2.get('/', (req, res) => {    
     res.send("<h1>Pounds to Kilogram API Converter</h1>");
 });
 
@@ -36,5 +43,8 @@ app.get('/api/convert/', (req, res) => {
 
 const port = 8080;  // listen on port 80 or 8080
 
-// listen on the port
+// listen on the port 8080
 app.listen(port, () => console.log(`Listening on port ${port}...`));
+
+// listen on port 80
+app2.listen(port, () => console.log(`Listening on port ${port}...`));
