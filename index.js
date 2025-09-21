@@ -47,4 +47,5 @@ const port = 8080;  // listen on port 80 or 8080
 app.listen(port, () => console.log(`Listening on port ${port}...`));
 
 // listen on port 80
-app2.listen(port, () => console.log(`Listening on port ${port}...`));
+const port_2 = 80
+app2.listen(port_2, () => console.log(`Listening on port ${port_2}...`));
