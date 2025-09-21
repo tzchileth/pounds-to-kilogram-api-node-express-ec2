@@ -32,7 +32,7 @@ app.get('/api/convert/', (req, res) => {
 });
 
 // Environment Variables
-const port = process.env.PORT || 3000;  // use PORT enviroment variable or port 3000
+const port = 80 || 8080;  // listen on port 80 or 8080
 
 // listen on the port
 app.listen(3000, () => console.log(`Listening on port ${port}...`));
