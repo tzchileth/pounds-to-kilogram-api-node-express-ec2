@@ -35,4 +35,4 @@ app.get('/api/convert/', (req, res) => {
 const port = 80 || 8080;  // listen on port 80 or 8080
 
 // listen on the port
-app.listen(3000, () => console.log(`Listening on port ${port}...`));
+app.listen(port, () => console.log(`Listening on port ${port}...`));
