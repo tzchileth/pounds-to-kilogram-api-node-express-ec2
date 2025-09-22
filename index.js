@@ -32,7 +32,7 @@ app.get('/api/convert/', (req, res) => {
     res.json(data);
 });
 
-const port = 8080;  // listen on port 8080
-
-// listen on the port 8080
+// const port = 8080;  // listen on port 8080
+const port = 80;  // listen on port 8080
+// listen on the port 80
 app.listen(port, () => console.log(`Listening on port ${port}...`));
