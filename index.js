@@ -1,14 +1,14 @@
 const express = require('express');
-const app = express();
+const app_1 = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {    
+app_1.get('/', (req, res) => {    
     res.send("<h1>Pounds to Kilogram API Converter</h1>");
 });
 
 // route to convert from lbs to kilogram
-app.get('/api/convert/', (req, res) => {
+app_1.get('/api/convert/', (req, res) => {
     const poundsValue = req.query.lbs;
 
     if (poundsValue === "" || isNaN(poundsValue))
@@ -33,6 +33,6 @@ app.get('/api/convert/', (req, res) => {
 });
 
 // const port = 8080;  // listen on port 8080
-const port = 80;  // listen on port 8080
+const app_1_port_80 = 80;  // listen on port 8080
 // listen on the port 80
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+app_1.listen(app_1_port_80port, () => console.log(`Listening on port ${app_1_port_80port}...`));
