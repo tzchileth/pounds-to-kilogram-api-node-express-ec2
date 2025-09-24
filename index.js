@@ -1,7 +1,7 @@
 const express = require('express');
 const app_1 = express();
 
-app.use(express.json());
+app_1.use(express.json());
 
 app_1.get('/', (req, res) => {    
     res.send("<h1>Pounds to Kilogram API Converter</h1>");
